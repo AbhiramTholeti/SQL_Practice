@@ -1,0 +1,38 @@
+Numeric Datatypes
+
+INTEGER: It stores integer values of whole numbers, including both positive and negative integers.
+Size: 4 bytes
+-Specifying the size is not mandatory.
+
+EX:Create table table1(int_var)
+	Insert into table1 values(12345) O/P:12345
+	nsert into table1 values(1234.56) O/P:1234
+
+NUMBER(Precision(P),Scale(S)):It can store both integers and decimal numbers.
+-Here precision is total digits, sacle is digits after decimal point.
+-If we doesn't specify size(p,s) it store exact number with decimals.
+
+Ex: Create table table2(num_var number(5,2))
+	insert into table2 values(123.12)  O/P:123.12
+	insert into table2 values(12.123)  O/P:12.12
+	
+FLOAT:It is used to store approximate numeric value.
+-By using float can lead to small precision errors, especially when working with decimals.
+-For decimal calculations, recommended to use Number instead of float.
+-It is suitable for scientific calculations where precision is not crucial.
+
+EX:Create table table4(fl_var float)
+	insert into table4 values(1234.123)   O/P:1234.123
+	
+EX:Create table table4(fl_var float(3))
+	insert into table4 values(1234.123)   O/P:1000
+	
+DECIMAL:It is used to store exact numeric values with fixed number of decimal values.
+-If we doesn't specify size(p,s) it stores only integer number without decimals.
+-It is suitable for financial calculations where precision is crucial.
+
+Ex: Create table table3(Dec_var decimal)
+	insert into table2 values(123.12)  O/P:123
+	
+Ex2:Create table table3(Dec_var decimal(5,2))
+	insert into table2 values(123.1234)  O/P:123.12
