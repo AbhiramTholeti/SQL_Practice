@@ -1,0 +1,22 @@
+Datatype: A datatype is an attribute that specifies the type of data object can hold.
+
+String Datatypes:
+CHAR(size): Fixed length character string. Range upto 2000-Oracle, 255-Mysql
+
+NCHAR(size): Fixed length unicode character string, 
+which means it can handle text in multiple languages. Range upto 1000-Oracle, 255-Mysql
+
+Varchar2(size): Variable length character string, upto 4000-oracle, 21000-Mysql
+
+NVarchar2(size): variable length unicode character string, upto 2000-Oracle, 21000-Mysql
+
+Large object datatypes(LOB):
+CLOB(Character larger obeject): Used to store large character strings such as text documents, articles etc
+Size range-upto 4Gb.
+
+NCLOB(National character large object):Used to store large unicode character strings, making it suitable for 
+multiple languages.
+Size range-upto 4Gb.
+
+BLOB(Binary large object):Used to store large binary data, such as images,audio,video and other type of multimedia files
+Size range-upto 4Gb.
